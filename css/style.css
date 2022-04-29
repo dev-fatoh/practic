@@ -1,0 +1,27 @@
+
+body {
+    font-size: 16px;
+    box-sizing: border-box ;
+}
+.container{
+    width: 100%;
+   
+    margin:0 auto;
+   
+    
+}
+.fathi,.filler{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    margin: 10px 0;
+}
+img{
+    width: 100%;
+    display: block;
+    height: 150px;
+    object-fit: cover;
+    
+}

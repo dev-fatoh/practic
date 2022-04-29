@@ -1,35 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Intro to CSS Animations</title> <style>
-        body {
-            padding: 50px;
-        }
-
-        #container {
-            padding: 20px;
-            width: 100%;
-            height: 250px;
-            background-color: #EEE;
-            display: flex;
-            align-items: center
-            ;
-            justify-content: center;
-        }
-        #hexagon {
-            transition: transform .3s cubic-bezier(.81,.87,.99,1.48);
-            
-        }
-        #hexagon:hover {
-            transform: scale3d(1.2,1.2,1) rotate(45deg);
-        }
-
-
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <title>slide images</title>
 </head>
 <body>
-    <div id="container">
-        <img id="hexagon" src="https://www.kirupa.com/images/hexagon.svg" />
+    <div class="container">
+        <div class="fathi">
+            <img src="1.jpg" alt="">
+            <img src="2.jpg" alt="">
+            <img src="3.jpg" alt="">
+            <img src="4.jpg" alt="">
+        </div>
+        <div class="filler"></div>
     </div>
+    <script type="text/javascript">
+        let gallarey=document.querySelectorAll('img')
+        console.log(gallarey)
+        let filler=document.querySelector('.filler')
+        gallarey.forEach(s=>{
+           return filler.innerHTML+=`<img src=${s.src}>`
+          
+        })
+        console.log(filler)
+    
+        
+    </script>
 </body>
 </html>
